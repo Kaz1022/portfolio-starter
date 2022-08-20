@@ -1,0 +1,73 @@
+.intro{
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+.i-left{
+  display: flex;
+  position: relative;
+  flex:1;
+  flex-direction: column;
+  gap: 2rem; 
+  /* gap in every element */
+}
+
+.i-name{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.i-name>:nth-child(1){
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.i-name>:nth-child(2){
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.i-name>:nth-child(3){
+  font-weight: 100;
+  font-size: 15px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+.i-button{
+  width: 6rem;
+  height: 2rem;
+}
+
+.i-icons{
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+}
+
+/* all imgs in icons >>> "*" */
+/* scale them half of the actual size */
+.i-icons>*{
+  transform: scale(0.5);
+}
+
+.i-icons>*:hover{
+  cursor: pointer;
+}
+
+.i-right{
+  flex:1;
+  position: relative;
+}
+
+.i-right>:nth-child(1){
+  position: absolute;
+  z-index: 1;
+  left: -10%;
+  top: -10%;
+  transform: scale(0.90);
+}

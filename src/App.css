@@ -2,9 +2,10 @@
 {
   --yellow: #F5C32C;
     --orange : #C18C5D;
-    --lightestPink : #ECC8AF;
+    --lightestPink : #f6eae2;
     --lightPink : #E7AD99;
     --darkPink : #CE796B;
+    --navy : #495867;
     --black : #242D49;
     --gray : #788097;
     --blueCard : #DDF8FE;
@@ -17,7 +18,8 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);   
+    background: var(--lightestPink); 
 }
 
 .button{
