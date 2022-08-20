@@ -1,7 +1,10 @@
 :root
 {
   --yellow: #F5C32C;
-    --orange : #FCA61F;
+    --orange : #C18C5D;
+    --lightestPink : #ECC8AF;
+    --lightPink : #E7AD99;
+    --darkPink : #CE796B;
     --black : #242D49;
     --gray : #788097;
     --blueCard : #DDF8FE;
@@ -15,6 +18,23 @@
     padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);    
+}
+
+.button{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: var(--darkPink);
+}
+
+.button:hover{
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--darkPink);
+  border: 1px solid var(--darkPink);
 }
 
 

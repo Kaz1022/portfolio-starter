@@ -10,7 +10,7 @@ function Navbar() {
       </div>
       <div className="n-right">
         <div className="n-list">
-          <ul>
+          <ul style={{listStyleType: 'none'}}>
             <li>Home</li>
             <li>Services</li>
             <li>Experience</li>
@@ -18,7 +18,7 @@ function Navbar() {
             <li>Testimonials</li>
           </ul>
         </div>
-        <button className="button">Contact me</button>
+        <button className="button n-button">Contact me</button>
       </div>
     </div>
   )
