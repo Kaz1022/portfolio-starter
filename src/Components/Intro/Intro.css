@@ -59,15 +59,29 @@
   cursor: pointer;
 }
 
-.i-right{
-  flex:1;
+.i-right {
+  flex: 1;
   position: relative;
 }
 
-.i-right>:nth-child(1){
+/* all the elements of i-right */
+.i-right > * {
   position: absolute;
   z-index: 1;
-  left: -10%;
-  top: -10%;
-  transform: scale(0.90);
+}
+
+.i-right > :nth-child(1) {
+  transform: scale(0.80);
+  left: -15%;
+  top: -15%;
+}
+
+.blur {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  z-index: 0;
+  top: -18%;
+  filter: blur(90px);
 }

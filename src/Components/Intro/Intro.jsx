@@ -3,6 +3,9 @@ import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import helloworld from '../../img/helloworld.png'
+import pinkdot from '../../img/pinkdot.png'
+import yellowdot from '../../img/yellowdot.png'
+import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
 function Intro() {
   return (
@@ -27,6 +30,24 @@ function Intro() {
       </div>
       <div className="i-right">
         <img src={helloworld} alt="" />
+        <div style={{left:'10%'}}>
+          <FloatingDiv image={pinkdot}/>
+        </div>
+        <div style={{top: '19rem', left:'80%'}}>
+          <FloatingDiv image={yellowdot} />
+        </div>
+
+        {/* blur divs */}
+        <div className="blur" style={{background: 'var(--lightPink)'}}>
+        </div>
+        <div className="blur" 
+          style={{
+            background: 'var(--purple)',
+            top: '17rem',
+            width: '10rem',
+            height: '10rem',
+            left: '70%'}}>
+        </div>
       </div>
     </div>
   )
