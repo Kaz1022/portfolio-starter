@@ -1,0 +1,35 @@
+.skills{
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+}
+
+.myskills{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  flex:1;
+}
+
+.myskills > :nth-child(1){
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.myskills > :nth-child(2){
+  color: var(--gray);
+  font-size: 18px;
+  margin-top: 1.4rem;
+}
+
+.s-button{
+  margin-top: 1rem;
+}
+
+.cards{
+  flex:1;
+}

@@ -79,9 +79,9 @@
 .blur {
   position: absolute;
   width: 8rem;
-  height: 8rem;
+  height: 7rem;
   border-radius: 50%;
   z-index: 0;
   top: -18%;
-  filter: blur(90px);
+  filter: blur(100px);
 }
