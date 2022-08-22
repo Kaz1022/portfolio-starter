@@ -1,5 +1,6 @@
 import { React, useContext } from 'react'
 import { themeContext } from '../../Context';
+import { motion } from 'framer-motion';
 import './Skills.css';
 import YellowBack from '../../img/yellowback.png';
 import PinkBack from '../../img/pinkback.png';
@@ -10,6 +11,8 @@ function Skills() {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transision = {duration: 1, type: "spring"};
 
   return (
     <div className="skills">
@@ -29,34 +32,46 @@ function Skills() {
       {/* right side */}
       <div className="cards">
        {/* Frist Card */}
-        <div style={{left: "16rem"}}>
+        <motion.div 
+        initial={{left: "25rem"}}
+        whileInView={{left: "16rem"}}
+        transition={transision}        
+        >
           <Card
             emoji={YellowBack}
             heading={"Languages"}
             detail={"Javascript, Ruby"}
             detail2={"HTML, CSS, SQL"}
           />
-        </div>
+        </motion.div>
 
         {/* Second Card */}
-        <div style={{ top: "6rem", left: "-1rem"}}>
+        <motion.div 
+        initial={{top: "2rem", left: "-5rem"}}
+        whileInView={{top: "6rem", left: "-1rem"}}
+        transition={transision}
+        >
           <Card
             emoji={PinkBack}
             heading={"Frameworks & Libraries"}
             detail={"NodeJS, Ajax, Express, EJS"}
             detail2={"jQuery, React, Rails, Active Record, Bootstrap, SASS"}
           />
-        </div>
+        </motion.div>
 
 
         {/* Third Card */}
-        <div style={{ top: "15rem", left: "12rem"}}>
+        <motion.div 
+        initial={{top: "18rem", left: "15rem"}}
+        whileInView={{top: "15rem", left: "12rem"}}
+        transition={transision}
+        >
           <Card
             emoji={NavyBack}
             heading={"Systems & Databases"}
             detail={"PostgreSQL, Git"}
           />
-        </div>
+        </motion.div>
 
         
       </div> 

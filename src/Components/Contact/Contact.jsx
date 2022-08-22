@@ -1,5 +1,6 @@
 import React, { useRef, useState, useContext } from 'react';
 import { themeContext } from '../../Context';
+import { motion } from 'framer-motion';
 import emailjs from "@emailjs/browser";
 import './Contact.css';
 import Yellowdot from '../../img/yellowdot.png';
@@ -9,6 +10,8 @@ function Contact() {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = { duration: 2, type: "spring" };
 
   const [done, setDone] = useState(false);
 
@@ -32,8 +35,18 @@ function Contact() {
         <div className="myskills">
           <span style={darkMode? {color: "white"} : {color: ""}}>Contact me</span>
         </div>
-        <img src={Yellowdot} alt="" />
-        <img src={Pinkdot} alt="" style={{top: '8rem', left:'-10rem', transform: "rotate(180deg)"}} />
+        <motion.img 
+        initial={{ left:'-3rem' }}
+        whileInView={{left:'1rem', transform: "rotate(90deg)" }}
+        transition={transition}
+        src={Yellowdot} alt="" 
+        />
+        <motion.img 
+        initial={{top: '8rem', left:'-15rem', transform: "rotate(0deg)"}}
+        whileInView={{top: '8rem', left:'-10rem', transform: "rotate(180deg)"}}
+        transition={transition}
+        src={Pinkdot} alt="" 
+        />
       </div>
 
       <div className="c-right">
