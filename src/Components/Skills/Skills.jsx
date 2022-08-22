@@ -28,7 +28,8 @@ function Skills() {
           <Card
             emoji={YellowBack}
             heading={"Languages"}
-            detail={"Javascript, Ruby, HTML, CSS, SQL"}
+            detail={"Javascript, Ruby"}
+            detail2={"HTML, CSS, SQL"}
           />
         </div>
 
@@ -37,7 +38,8 @@ function Skills() {
           <Card
             emoji={PinkBack}
             heading={"Frameworks & Libraries"}
-            detail={"NodeJS, React, Ajax, Express, EJS, jQuery, Rails"}
+            detail={"NodeJS, Ajax, Express, EJS"}
+            detail2={"jQuery, React, Rails"}
           />
         </div>
 
@@ -47,7 +49,8 @@ function Skills() {
           <Card
             emoji={NavyBack}
             heading={"Systems & Databases"}
-            detail={"PostgreSQL, Git, Active Record"}
+            detail={"PostgreSQL, Git"}
+            detail2={"Active Record"}
           />
         </div>
 

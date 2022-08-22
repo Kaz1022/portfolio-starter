@@ -32,6 +32,7 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
+  justify-content: flex-end;
 }
 
 .n-list > ul > li:hover{
@@ -40,5 +41,5 @@
 }
 
 .n-button{
-  flex:2;
+  flex:1;
 }
