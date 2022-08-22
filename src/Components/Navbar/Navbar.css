@@ -35,7 +35,7 @@
   justify-content: flex-end;
 }
 
-.n-list > ul > li:hover{
+.n-list > ul :hover{
   cursor: pointer;
   color: var(--darkPink);
 }

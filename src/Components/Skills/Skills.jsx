@@ -15,7 +15,7 @@ function Skills() {
   const transision = {duration: 1, type: "spring"};
 
   return (
-    <div className="skills">
+    <div className="skills" id="Skills">
       {/* left side */}
       <div className="myskills">
         <span style={darkMode? {color: "white"} : {color: ""}}>My Skills</span>

@@ -15,7 +15,7 @@ function Portfolio() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="Portfolio">
       {/* heading */}
       <span style={darkMode? {color: "var(--purple)"} : {color: ""}}>Recent Projects</span>
       <span>Portfolio</span>

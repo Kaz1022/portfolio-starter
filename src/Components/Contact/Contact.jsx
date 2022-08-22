@@ -30,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="Contact">
       <div className="w-left">
         <div className="myskills">
           <span style={darkMode? {color: "white"} : {color: ""}}>Contact me</span>
