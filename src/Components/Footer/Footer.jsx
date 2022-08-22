@@ -12,10 +12,10 @@ function Footer() {
     <div className="f-content">
       <span>Kazuko Baynton</span>
       <div className="f-icons">
-      <a href="https://github.com/Kaz1022">
+      <a href="https://github.com/Kaz1022" target="_blank" rel="noopener noreferrer">
           <img src={Github} alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/kazuko-baynton-58898321b/">
+          <a href="https://www.linkedin.com/in/kazuko-baynton-58898321b/" target="_blank" rel="noopener noreferrer">
           <img src={LinkedIn} alt="" />
           </a>
       </div>

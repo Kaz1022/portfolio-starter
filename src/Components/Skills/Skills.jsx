@@ -14,7 +14,7 @@ function Skills() {
         <span>
         I first started coding in the fall of 2021 to get into a bootcamp. I always liked using computers but never coded before. From zero experience, through 8 month flex program, I have learned so much.
         </span>
-        <a href="https://resume.creddle.io/resume/6g5rlahe2ri">
+        <a href="https://resume.creddle.io/resume/6g5rlahe2ri" target="_blank" rel="noopener noreferrer">
         <button className="button s-button">My Resume</button>
         </a>
        
