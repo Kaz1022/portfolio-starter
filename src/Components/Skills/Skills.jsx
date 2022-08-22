@@ -24,7 +24,7 @@ function Skills() {
       {/* right side */}
       <div className="cards">
        {/* Frist Card */}
-        <div style={{left: "14rem"}}>
+        <div style={{left: "16rem"}}>
           <Card
             emoji={YellowBack}
             heading={"Languages"}
@@ -33,7 +33,7 @@ function Skills() {
         </div>
 
         {/* Second Card */}
-        <div style={{ top: "6rem", left: "-2rem"}}>
+        <div style={{ top: "6rem", left: "-1rem"}}>
           <Card
             emoji={PinkBack}
             heading={"Frameworks & Libraries"}
