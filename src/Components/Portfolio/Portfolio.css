@@ -34,6 +34,6 @@
 
 .portfolio img{
   width: 19rem;
-  filter: drop-shadow(12px 10px 12px rgba(243, 186, 82, 0.30));
+  filter: drop-shadow(12px 10px 20px rgba(240, 211, 230, 0.663));
   border-radius: 19px;
 }

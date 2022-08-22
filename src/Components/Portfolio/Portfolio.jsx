@@ -1,4 +1,5 @@
-import React from 'react';
+import { React, useContext } from 'react'
+import { themeContext } from '../../Context';
 import './Portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Arpeggio from '../../img/arpeggio.png';
@@ -9,10 +10,14 @@ import 'swiper/css';
 
 
 function Portfolio() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="portfolio">
       {/* heading */}
-      <span>Recent Projects</span>
+      <span style={darkMode? {color: "var(--purple)"} : {color: ""}}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}

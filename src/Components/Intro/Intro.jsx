@@ -1,4 +1,5 @@
-import React from 'react'
+import { React, useContext } from 'react'
+import { themeContext } from '../../Context';
 import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
@@ -8,12 +9,16 @@ import yellowdot from '../../img/yellowdot.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
 function Intro() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
           <span>Full Stack Web Developer</span>
-          <span>Kaz Baynton</span>
+          <span style={darkMode? {color: "white"} : {color: ""}}>Kaz Baynton</span>
           <span>I am a developer who has a passion in language learning! Currently I speak Javascript, and Ruby.</span>
         </div>
 

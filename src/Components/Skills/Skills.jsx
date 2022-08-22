@@ -1,4 +1,5 @@
-import React from 'react';
+import { React, useContext } from 'react'
+import { themeContext } from '../../Context';
 import './Skills.css';
 import YellowBack from '../../img/yellowback.png';
 import PinkBack from '../../img/pinkback.png';
@@ -6,11 +7,15 @@ import NavyBack from '../../img/navyback.png';
 import Card from '../Card/Card';
 
 function Skills() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="skills">
       {/* left side */}
       <div className="myskills">
-        <span>My Skills</span>
+        <span style={darkMode? {color: "white"} : {color: ""}}>My Skills</span>
         <span>
         I first started coding in the fall of 2021 to get into a bootcamp. I always liked using computers but never coded before. From zero experience, through 8 month flex program, I have learned so much.
         </span>
