@@ -38,7 +38,7 @@ function Intro() {
         </div>
 
         {/* blur divs */}
-        <div className="blur" style={{background: 'var(--lightPink)'}}>
+        <div className="blur" style={{background: 'var(--purple)'}}>
         </div>
         <div className="blur" 
           style={{

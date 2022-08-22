@@ -39,7 +39,7 @@ function Skills() {
             emoji={PinkBack}
             heading={"Frameworks & Libraries"}
             detail={"NodeJS, Ajax, Express, EJS"}
-            detail2={"jQuery, React, Rails"}
+            detail2={"jQuery, React, Rails, Active Record, Bootstrap, SASS"}
           />
         </div>
 
@@ -50,7 +50,6 @@ function Skills() {
             emoji={NavyBack}
             heading={"Systems & Databases"}
             detail={"PostgreSQL, Git"}
-            detail2={"Active Record"}
           />
         </div>
 
