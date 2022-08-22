@@ -38,3 +38,10 @@
   filter: drop-shadow(12px 10px 20px rgba(240, 211, 230, 0.663));
   border-radius: 19px;
 }
+
+@media screen and (max-width: 480px) {
+  .portfolio{
+    height: 30rem;
+    margin-bottom: -6rem;
+  }
+}

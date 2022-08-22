@@ -1,5 +1,7 @@
 import { React, useContext } from 'react'
 import { themeContext } from '../../Context';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
@@ -7,7 +9,6 @@ import helloworld from '../../img/helloworld.png'
 import pinkdot from '../../img/pinkdot.png'
 import yellowdot from '../../img/yellowdot.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
-import { motion } from 'framer-motion';
 
 function Intro() {
   
@@ -26,7 +27,9 @@ function Intro() {
           <span>I am a developer who has a passion in language learning! Currently I speak Javascript, and Ruby.</span>
         </div>
 
+        <Link to="Contact" smooth={true} spy={true}>
         <button className="button i-button">Hire me</button>
+        </Link>
 
         <div className="i-icons">
           <a href="https://github.com/Kaz1022" target="_blank" rel="noopener noreferrer">
@@ -45,6 +48,7 @@ function Intro() {
           initial={{ left: "-25%" }}
           whileInView={{ left: "-12%" }}
           transition={transition}
+          className="floating-div"
         >
           <FloatingDiv image={pinkdot}/>
         </motion.div>
@@ -53,6 +57,7 @@ function Intro() {
           initial={{top: '19rem', left:'90%'}}
           whileInView={{ top: '19rem', left:'75%' }}
           transition={transition}
+          className="floating-div"
         >
           <FloatingDiv image={yellowdot} />
         </motion.div>

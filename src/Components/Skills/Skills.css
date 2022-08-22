@@ -38,3 +38,24 @@
 .cards>*{
   position: absolute;
 }
+
+@media screen and (max-width: 480px) {
+  .skills{
+    margin-top: 0;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
+    padding: 0;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  .cards >*{
+    position: static;
+  }
+}

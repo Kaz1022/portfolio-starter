@@ -90,3 +90,37 @@
   top: -18%;
   filter: blur(100px);
 }
+
+@media screen and (max-width: 480px) {
+  .intro{
+    flex-direction: column;
+    height: 30rem;
+    gap: 0rem;
+  }
+
+  .i-icons{
+    margin-top: -5rem;
+    justify-content: flex-end;
+  }
+
+  .i-icons>*{
+    transform: scale(0.5);
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px var(--darkPink);
+  }
+  
+  .i-right{
+    margin-top: -4rem;
+    transform: scale(0.5);
+    left: -2rem;
+  }
+
+  .i-right .blur{
+    display: none;
+  }
+
+  .floating-div:nth-of-type(1){
+    top: -3rem !important;
+  }
+}
