@@ -7,6 +7,16 @@
   padding-top: 3rem;
 }
 
+.w-left{
+  position: relative;
+}
+
+.w-left > img{
+  position: absolute;
+  margin-top: 1rem;
+  margin-left:10rem;
+}
+
 .c-right{
   display: flex;
   justify-content: center;

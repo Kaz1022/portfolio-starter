@@ -1,0 +1,32 @@
+.footer{
+  display:flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -7rem;
+}
+
+.f-content{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.f-icons{
+  display: flex;
+  gap: 5rem;
+  transform: scale(0.5);
+}
+
+.f-icons>*:hover{
+  cursor: pointer;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px var(--darkPink);
+}
