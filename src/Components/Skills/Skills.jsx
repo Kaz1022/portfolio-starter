@@ -1,8 +1,9 @@
 import React from 'react';
 import './Skills.css';
-import HeartEmoji from '../../img/heartemoji.png';
-import Glasses from '../../img/glasses.png';
-import Humble from '../../img/humble.png';
+import YellowBack from '../../img/yellowback.png';
+import PinkBack from '../../img/pinkback.png';
+import NavyBack from '../../img/navyback.png';
+import Card from '../Card/Card';
 
 function Skills() {
   return (
@@ -22,9 +23,36 @@ function Skills() {
 
       {/* right side */}
       <div className="cards">
-        I am the right.
-      </div>
-      
+       {/* Frist Card */}
+        <div style={{left: "14rem"}}>
+          <Card
+            emoji={YellowBack}
+            heading={"Languages"}
+            detail={"Javascript, Ruby, HTML, CSS, SQL"}
+          />
+        </div>
+
+        {/* Second Card */}
+        <div style={{ top: "6rem", left: "-2rem"}}>
+          <Card
+            emoji={PinkBack}
+            heading={"Frameworks & Libraries"}
+            detail={"NodeJS, React, Ajax, Express, EJS, jQuery, Rails"}
+          />
+        </div>
+
+
+        {/* Third Card */}
+        <div style={{ top: "15rem", left: "12rem"}}>
+          <Card
+            emoji={NavyBack}
+            heading={"Systems & Databases"}
+            detail={"PostgreSQL, Git, Active Record"}
+          />
+        </div>
+
+        
+      </div> 
     </div>
   )
 }

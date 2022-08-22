@@ -53,10 +53,15 @@
 /* scale them half of the actual size */
 .i-icons>*{
   transform: scale(0.5);
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: var(--boxShadow);
 }
 
 .i-icons>*:hover{
   cursor: pointer;
+  box-shadow: 12px 12px 2px 1px var(--darkPink);
+  
 }
 
 .i-right {
