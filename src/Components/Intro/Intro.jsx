@@ -7,8 +7,12 @@ import helloworld from '../../img/helloworld.png'
 import pinkdot from '../../img/pinkdot.png'
 import yellowdot from '../../img/yellowdot.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
+import { motion } from 'framer-motion';
 
 function Intro() {
+  
+  // Transition
+  const transition = { duration: 2, type: "spring" };
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -35,12 +39,23 @@ function Intro() {
       </div>
       <div className="i-right">
         <img src={helloworld} alt="" />
-        <div style={{left:'10%'}}>
+
+        {/* animation */}
+        <motion.div
+          initial={{ left: "-25%" }}
+          whileInView={{ left: "-12%" }}
+          transition={transition}
+        >
           <FloatingDiv image={pinkdot}/>
-        </div>
-        <div style={{top: '19rem', left:'80%'}}>
+        </motion.div>
+
+        <motion.div
+          initial={{top: '19rem', left:'90%'}}
+          whileInView={{ top: '19rem', left:'75%' }}
+          transition={transition}
+        >
           <FloatingDiv image={yellowdot} />
-        </div>
+        </motion.div>
 
         {/* blur divs */}
         <div className="blur" style={{background: 'var(--purple)'}}>
