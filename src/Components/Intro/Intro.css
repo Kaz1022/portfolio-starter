@@ -33,7 +33,7 @@
 
 .i-name>:nth-child(3){
   font-weight: 100;
-  font-size: 15px;
+  font-size: 18px;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -95,7 +95,7 @@
   .intro{
     flex-direction: column;
     height: 30rem;
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .i-icons{

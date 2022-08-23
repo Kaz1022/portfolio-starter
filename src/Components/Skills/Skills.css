@@ -21,7 +21,7 @@
 }
 
 .myskills > :nth-child(2){
-  color: var(--navy);
+  color: var(--gray);
   font-size: 18px;
   margin-top: 1.4rem;
 }
@@ -41,8 +41,8 @@
 
 @media screen and (max-width: 480px) {
   .skills{
-    margin-top: 0;
-    margin-bottom: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 15rem;
     flex-direction: column;
     gap: 5rem;
     height: 40rem;

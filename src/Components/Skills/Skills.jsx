@@ -20,7 +20,7 @@ function Skills() {
       <div className="myskills">
         <span style={darkMode? {color: "white"} : {color: ""}}>My Skills</span>
         <span>
-        I first started coding in the fall of 2021 to get into a bootcamp. I always liked using computers but never coded before. From zero experience, through 8 month flex program, I have learned so much.
+          I first started coding in the fall of 2021 to get into a bootcamp. From zero experience, through 8months flex program, I have learned not only fundamentals of web development, but also how to work as a team and how to think like a developer picking up relatively new languages or framework on the go. 
         </span>
         <a href="https://resume.creddle.io/resume/6g5rlahe2ri" target="_blank" rel="noopener noreferrer">
         <button className="button s-button">My Resume</button>
