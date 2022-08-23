@@ -125,9 +125,11 @@
   }
 }
 
+/* ipad portrait  */
 @media only screen 
   and (min-device-width: 480px) 
-  and (max-device-width: 1024px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait)  
   and (-webkit-min-device-pixel-ratio: 1) {
 
     .intro{
@@ -139,4 +141,37 @@
       left: -50%;
       top: -15%;
     }
+}
+
+/* landscape */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .intro{
+      height: 80vh;
+    }
+
+    .i-icons{
+      margin-top: 0rem;
+      display: flex;
+      gap: 0rem;
+    }
+
+    .i-icons>*{
+      transform: scale(0.4);
+      background: transparent;
+      border-radius: 20px;
+      box-shadow: 12px 12px 2px 1px var(--darkPink);
+    }
+
+    .i-right{
+      margin-top: -4rem;
+      transform: scale(0.8);
+      left: -2rem;
+    }
+
 }
