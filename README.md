@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Hosted on [kazukobaynton.com](kazukobaynton.com)
+Hosted on [kazukobaynton.com](kazukobaynton.netlify.app)
 
 ## Dependencies
 - React
