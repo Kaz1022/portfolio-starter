@@ -1,8 +1,8 @@
 import { React, useContext } from 'react'
 import { themeContext } from '../../Context';
-import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import './Intro.css'
+import Resume from './Resume.pdf'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import helloworld from '../../img/helloworld.png'
@@ -27,9 +27,9 @@ function Intro() {
           <span>I am a developer who is passionate about language learning, trying new things and aquiring new skills! Currently I speak Javascript and Ruby.</span>
         </div>
 
-        <Link to="Contact" smooth={true} spy={true}>
-        <button className="button i-button">Hire me</button>
-        </Link>
+        <a href={Resume} target="_blank" rel="noopener noreferrer" >
+        <button className="button i-button">Resume</button>
+        </a>
 
         <div className="i-icons">
           <a href="https://github.com/Kaz1022" target="_blank" rel="noopener noreferrer">
