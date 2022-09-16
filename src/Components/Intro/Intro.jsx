@@ -27,9 +27,9 @@ function Intro() {
           <span>I am a developer who is passionate about language learning, trying new things and aquiring new skills! Currently I speak Javascript and Ruby.</span>
         </div>
 
-        <a href={Resume} target="_blank" rel="noopener noreferrer" >
-        <button className="button i-button">Resume</button>
-        </a>
+        
+        <button className="button i-button"><a href={Resume} target="_blank" rel="noopener noreferrer" >Resume </a></button>
+       
 
         <div className="i-icons">
           <a href="https://github.com/Kaz1022" target="_blank" rel="noopener noreferrer">
