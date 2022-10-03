@@ -18,9 +18,17 @@ function Skills() {
     <div className="skills" id="Skills">
       {/* left side */}
       <div className="myskills">
-        <span style={darkMode? {color: "white"} : {color: ""}}>My Skills</span>
+        <h1 style={darkMode? {color: "white"} : {color: ""}}>
+          My Skills
+        </h1>
         <span>
+          <h3 style={darkMode? {color: "white"} : {color: ""}}>Tech Stack</h3> Javascript, Ruby HTML, CSS, SQL, NodeJS, Ajax, Express, EJS, jQuery, React, Rails, Active Record, Bootstrap, SASS.<br/><br/>
           I first started coding in the fall of 2021 in preparation for a Web Development Bootcamp, starting with zero experience. Through the 8 month program I learned not only the fundamentals of web development, but also how to work with a team and to think like a developer, picking up new languages and frameworks on the go.
+
+          <h3 style={darkMode? {color: "white"} : {color: ""}}>Other</h3>
+          I am adaptable and possess a flexible mindset.<br/><br/>
+
+          I have traveld extensively around the world before Covid and I am aware that when working with other poeple it is crucial to be flexible, patient, and cluturaly sensitive. I have these skills and I am confident that I can continue to apply them in any environment. 
         </span>
           
         <div className="blur s-blur1" style={{background: "var(--yellow)"}}></div>

@@ -24,7 +24,7 @@ function Intro() {
         <div className="i-name">
           <span>Full Stack Web Developer</span>
           <span style={darkMode? {color: "white"} : {color: ""}}>Kaz Baynton</span>
-          <span>I am a developer who is passionate about language learning, trying new things and aquiring new skills! Currently I speak Javascript and Ruby.</span>
+          <span>I am a developer who is passionate about language learning, trying new things and aquiring new skills! </span>
         </div>
 
         
