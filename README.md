@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Hosted on [kazukobaynton.com](https://kazukobaynton.com/)
+Practice
 
 ## Dependencies
 - React
